@@ -1,0 +1,2057 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="코로나 현황"
+                    android:fontFamily="@font/esamanrulight"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/esamanrulight"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_margin ="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:alignmentMode="alignMargins"
+            app:cardCornerRadius="20dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/esamanrubold"
+                    android:text="확진자수"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            app:cardCornerRadius="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/esamanrumedium"
+                                android:text="확진환자"
+                                android:textSize="16dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/defCnt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/esamanrubold"
+                                    android:text="233"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/incDec"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/esamanrubold"
+                                    android:textColor="@color/red"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            app:cardCornerRadius="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/esamanrumedium"
+                                android:gravity="center"
+                                android:text="격리해제"
+                                android:textSize="16dp">
+
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/clear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/esamanrubold"
+                                    android:text="23324"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/esamanrubold"
+                                    android:textColor="@color/red"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            app:cardCornerRadius="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/esamanrumedium"
+                                android:gravity="center"
+                                android:text="사망자"
+                                android:textSize="16dp">
+
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/death"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/esamanrubold"
+                                    android:text="23324"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/esamanrubold"
+                                    android:textColor="@color/red"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_margin ="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:alignmentMode="alignMargins"
+            app:cardCornerRadius="20dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:background="@drawable/bg"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/esamanrubold"
+                    android:text="백신 접종 현황"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="20dp"
+                            android:padding="10dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/esamanrumedium"
+                                android:gravity="center"
+                                android:text="1차 접종"
+                                android:textSize="16dp" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:layout_margin="2dp"
+                                >
+
+                                <TextView
+                                    android:id="@+id/firstCnt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/esamanrubold"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/firstCnt1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/esamanrubold"
+                                    android:textColor="@color/red"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="20dp"
+                            android:padding="10dp"
+                            android:layout_margin="5dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_weight="1"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/esamanrumedium"
+                                android:gravity="center"
+                                android:text="2차 접종"
+                                android:textSize="16dp">
+
+                            </TextView>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:layout_margin="2dp"
+                                >
+
+                                <TextView
+                                    android:id="@+id/secondCnt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/esamanrubold"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/secondCnt1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/esamanrubold"
+                                    android:textColor="@color/red"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+
+            android:columnOrderPreserved="false"
+            android:rowCount="9">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/esamanrubold"
+                        android:text="서울"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/seoul1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/seoul2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/seoul3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="부산"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/busan1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:gravity="center"
+                            android:text="2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/busan2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:gravity="center"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="  사망자" />
+
+                        <TextView
+                            android:id="@+id/busan3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:gravity="center"
+                            android:text="234124" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="대구"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/daegu1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/daegu2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/daegu3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="인천"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/incheon1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/incheon2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/incheon3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="광주"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/gwangju1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/gwangju2"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/gwangju3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="대전"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/daejeon1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/daejeon2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/daejeon3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="울산"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/ulsan1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/ulsan2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/ulsan3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="세종"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/sejong1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/sejong2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/sejong3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="경기"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/gyeonggi1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/gyeonggi2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:gravity="center"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/gyeonggi3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="강원"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/gangwon1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/gangwon2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/gangwon3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="충북"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/chungbuk1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/chungbuk2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/chungbuk3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="충남"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/chungnam1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/chungnam2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/chungnam3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="전북"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/jeonbuk1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/jeonbuk2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/jeonbuk3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="전남"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/jeonnam1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/jeonnam2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/jeonnam3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="경북"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/gyeongbuk1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/gyeongbuk2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/gyeongbuk3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="경남"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/gyeongnam1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/gyeongnam2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/gyeongnam3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="제주"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/jeju1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/jeju2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/jeju3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ivory"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/esamanrubold"
+                        android:gravity="center"
+                        android:text="검역"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="확진환자" />
+
+                        <TextView
+                            android:id="@+id/geom1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="23413323424"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/geom2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:padding="5dp"
+                            android:text=" 사망자" />
+
+                        <TextView
+                            android:id="@+id/geom3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/esamanrumedium"
+                            android:text="234124" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

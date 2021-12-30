@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/bg_small"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_baseline_brightness_low_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/esamanrulight"
+                        android:paddingStart="4dp"
+                        android:paddingLeft="4dp"
+                        android:text="날씨정보"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/esamanrulight"
+                    android:paddingStart="24dp"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:background="@drawable/round"
+                    android:layout_margin="5dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/bg_small"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_baseline_masks_24"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/esamanrulight"
+                        android:paddingStart="4dp"
+                        android:paddingLeft="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="미세먼지정보"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/dust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/esamanrulight"
+                    android:background="@drawable/round"
+                    android:paddingStart="24dp"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dustdust" />
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/bg_small"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_baseline_info_24"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="4dp"
+                        android:paddingLeft="4dp"
+                        android:text="현재기상정보"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/esamanrubold"
+                        android:textColor="@color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dangerinfo"
+                    android:background="@drawable/round"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/esamanrulight"
+                    android:paddingStart="24dp"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/dustinfo"
+                    android:background="@drawable/round"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/esamanrulight"
+                    android:paddingStart="24dp"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

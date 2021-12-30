@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "122199182836",
+    "project_id": "didapp-7f0a8",
+    "storage_bucket": "didapp-7f0a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122199182836:android:f9e20010a2da50a3ad7da1",
+        "android_client_info": {
+          "package_name": "com.example.didapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122199182836-k64qofc8qfpc7dmbnnpsokujp0kq17nv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvjgfPgJbZGoNmp5QAA4X91vqfTsSeDvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122199182836-k64qofc8qfpc7dmbnnpsokujp0kq17nv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

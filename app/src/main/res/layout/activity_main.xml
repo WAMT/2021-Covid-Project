@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/currentlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/esamanrulight"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/bg2"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/esamanrulight"
+                    android:paddingStart="4dp"
+                    android:paddingLeft="4dp"
+                    android:text="현재위치"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <Spinner
+                    android:id="@+id/spinner_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/location_prompt" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigationbar"
+        android:layout_below="@+id/currentlocation"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:id="@+id/btn_home"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F6EBBC"
+            android:drawableBottom="@drawable/ic_baseline_home_24" />
+
+        <Button
+            android:id="@+id/btn_weatherdust"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#AFAFAF"
+            android:drawableBottom="@drawable/ic_baseline_brightness_low_24" />
+
+        <Button
+            android:id="@+id/btn_covid"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#AFAFAF"
+            android:drawableBottom="@drawable/ic_baseline_coronavirus_24" />
+
+        <Button
+            android:id="@+id/btn_a"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#AFAFAF"
+            android:drawableBottom="@drawable/ic_a" />
+
+    </LinearLayout>
+
+</RelativeLayout>
